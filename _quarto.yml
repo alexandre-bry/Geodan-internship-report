@@ -1,87 +1,86 @@
 project:
-  type: book
+    type: book
 
 book:
-  title: Internship Report
-  subtitle: Tree object detection using airborne images and LiDAR point clouds
-  date: 2024-06-31
-  date-format: "MMMM YYYY"
-  author:
-    - name: Alexandre Bry
-      email: alexandre.bry.21@polytechnique.org
-      affiliation:
-        - name: École polytechnique
-          department: Computer Science Department
-          city: Palaiseau
-          country: France
-          url: https://portail.polytechnique.edu/informatique/fr/page-daccueil
-        - name: Geodan B.V.
-          department: Research Department
-          city: Amsterdam
-          country: The Netherlands
-          url: https://research.geodan.nl/
-      roles: writing
-      corresponding: true
-  sidebar:
-    alignment: center
-    search: true
-  repo-url: https://github.com/ZokszY/Geodan-internship-report
-  downloads: [pdf]
-  chapters:
-    - index.qmd
-    - qmd-files/acknowledgments.qmd
-    - qmd-files/intro.qmd
-    - qmd-files/sota.qmd
-    - qmd-files/objectives.qmd
-    - qmd-files/dataset.qmd
-    - qmd-files/model.qmd
-    - qmd-files/results.qmd
-    - qmd-files/discussion.qmd
-    - qmd-files/conclusion.qmd
-    - qmd-files/references.qmd
+    title: Internship Report
+    subtitle: Tree object detection using airborne images and LiDAR point clouds
+    date: 2024-06-31
+    date-format: "MMMM YYYY"
+    author:
+        - name: Alexandre Bry
+          email: alexandre.bry.21@polytechnique.org
+          affiliation:
+              - name: École polytechnique
+                department: Computer Science Department
+                city: Palaiseau
+                country: France
+                url: https://portail.polytechnique.edu/informatique/fr/page-daccueil
+              - name: Geodan B.V.
+                department: Research Department
+                city: Amsterdam
+                country: The Netherlands
+                url: https://research.geodan.nl/
+          roles: writing
+          corresponding: true
+    sidebar:
+        alignment: center
+        search: true
+    repo-url: https://github.com/alexandre-bry/Geodan-internship-report
+    downloads: [pdf]
+    chapters:
+        - index.qmd
+        - qmd-files/acknowledgments.qmd
+        - qmd-files/intro.qmd
+        - qmd-files/sota.qmd
+        - qmd-files/objectives.qmd
+        - qmd-files/dataset.qmd
+        - qmd-files/model.qmd
+        - qmd-files/results.qmd
+        - qmd-files/discussion.qmd
+        - qmd-files/conclusion.qmd
+        - qmd-files/references.qmd
 
 lightbox: true
 bibliography: references.bib
 
 format:
-  html:
-    theme: cosmo
-    number-sections: true
-    comments:
-      hypothesis: true
-    default-image-extension: svg
-  pdf:
-    documentclass: scrreprt
-    papersize: a4
-    geometry:
-      - inner=3cm
-      - outer=4cm
-      - top=3cm
-      - bottom=4cm
-      - headsep=22pt
-      - headheight=11pt
-      - footskip=33pt
-      - ignorehead
-      - ignorefoot
-      - heightrounded
-    toc: true
-    lof: true
-    number-sections: true
-    colorlinks: true
-    cite-method: biblatex
-    biblatexoptions:
-      - backend=biber,
-      - style=numeric,
-      - sorting=none,
-    template-partials:
-      - tex-files/template.tex
-      - tex-files/before-body.tex
-      - tex-files/before-toc.tex
-      - tex-files/toc.tex
-    keep-tex: true
+    html:
+        theme: cosmo
+        number-sections: true
+        comments:
+            hypothesis: true
+        default-image-extension: svg
+    pdf:
+        documentclass: scrreprt
+        papersize: a4
+        geometry:
+            - inner=3cm
+            - outer=4cm
+            - top=3cm
+            - bottom=4cm
+            - headsep=22pt
+            - headheight=11pt
+            - footskip=33pt
+            - ignorehead
+            - ignorefoot
+            - heightrounded
+        toc: true
+        lof: true
+        number-sections: true
+        colorlinks: true
+        cite-method: biblatex
+        biblatexoptions:
+            - backend=biber,
+            - style=numeric,
+            - sorting=none,
+        template-partials:
+            - tex-files/template.tex
+            - tex-files/before-body.tex
+            - tex-files/before-toc.tex
+            - tex-files/toc.tex
+        keep-tex: true
 
 # csl: chicago-author-date.csl
 
 execute:
-  echo: false
-
+    echo: false

@@ -4,3 +4,4 @@
 /_freeze/
 /site_libs/
 Internship-Report.tex
+**/*.quarto_ipynb
